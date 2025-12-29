@@ -4,7 +4,7 @@ Dette er min personlige portefølje, laget for å vise frem mine UX/UI- og front
 
 ---
 
-## 📂 Innhold
+##  Innhold
 
 - **Hero-seksjon:** Presenterer meg selv og mitt fokusområde.
 - **Prosjektseksjon:** Viser frem tidligere prosjekter, med "Vis mer"-modaler for detaljer.
@@ -13,7 +13,7 @@ Dette er min personlige portefølje, laget for å vise frem mine UX/UI- og front
 
 ---
 
-## 💻 Teknologier
+##  Teknologier
 
 - HTML5
 - CSS3 (med CSS variables og flex/grid)
@@ -23,7 +23,7 @@ Dette er min personlige portefølje, laget for å vise frem mine UX/UI- og front
 
 ---
 
-## ⚡ Funksjoner
+##  Funksjoner
 
 - Responsive design som fungerer på mobil, nettbrett og desktop.
 - Dark/light mode toggle.
