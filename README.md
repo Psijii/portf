@@ -1,4 +1,4 @@
-# Siw Arolilja – Portefølje
+# Siw Årolilja – Portefølje
 
 Dette er min personlige portefølje, laget for å vise frem mine UX/UI- og frontend-prosjekter. Porteføljen kombinerer moderne webteknologi med interaktive funksjoner for å demonstrere mitt arbeid med design, struktur og utvikling.
 
