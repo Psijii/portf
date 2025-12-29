@@ -68,3 +68,13 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) modal.style.display = 'none';
   });
 });
+
+/** Hamburger menu toggle */
+const hamburger = document.createElement('div');
+hamburger.classList.add('hamburger');
+document.querySelector('.header-layout').appendChild(hamburger);
+
+hamburger.addEventListener('click', () => {
+  document.querySelector('nav').classList.toggle('show');
+  hamburger.classList.toggle('active');
+});
