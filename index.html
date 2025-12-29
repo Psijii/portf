@@ -1,50 +1,229 @@
 <!doctype html>
 <html lang="no">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portefølje</title>
+  <title>Siw Årolilja Iversen - I live my life as a UXicorn</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body>
 
-  <header>
-    <h1>Portefølje</h1>
-    <nav>
-      <ul>
-        <li><a href="#projects">Prosjekter</a></li>
-        <li><a href="#about">Om meg</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
-    </nav>
+<body>
+  <header class="topbar">
+    <div class="container header-layout">
+      <h1 class="logo">Siw Årolilja</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Prosjekter</a></li>
+          <li><a href="#about">Om meg</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="toggle">🌙</button>
+    </div>
   </header>
 
-  <main>
-    <section id="intro">
-      <h2>Hei 👋</h2>
-      <p>Dette er en enkel portefølje laget med HTML, CSS og JavaScript.</p>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <p class="lead">Jeg designer og utvikler brukervennlige løsninger med fokus på struktur, logikk og mennesker.</p>
+      <p>Jeg liker å lage hverdagen til alle enklere og bedre.</p>
+      <a href="#projects" class="cta">Se prosjekter</a>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Prosjekter</h2>
-      <p>Her kan du legge til case‑studier, UX‑arbeid, kodeprosjekter osv.</p>
-    </section>
+  <main class="container">
 
-    <section id="about">
-      <h2>Om meg</h2>
-      <p>Skriv kort hvem du er, hva du gjør, og hva du er best på.</p>
-    </section>
+   <section id="projects">
+  <h2>Prosjekter</h2>
+
+  <div class="portfolio-flex">
+    <!-- Ggiamap -->
+    <div class="image-link">
+      <img src="images/gigamap.png" alt="Screenshot av Ggiamap">
+      <div class="overlay">
+        <div class="overlay-bg"></div>
+        <button class="open-modal" data-modal="modal-gigamap">Vis mer</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-gigamap">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Ggiamap</h3>
+        <p>Fullstendig funksjonell gigamap utviklet for Sharecat Solutions Data Services. Utviklet med React, TypeScript og Xyflow/React Flow, pakket med Vite.</p>
+              
+          <a href="https://dsfcgigamap.netlify.app/">Live versjon</a> |
+          <a href="#">Privat repository</a>
+        
+      </div>
+    </div>
+
+    <!-- Retool -->
+    <div class="image-link">
+      <img src="images/retool.png" alt="Screenshot av Retool">
+      <div class="overlay">
+        <div class="overlay-bg"></div>
+        <button class="open-modal" data-modal="modal-retool">Vis mer</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-retool">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+<h3>Retool</h3> <p>Jeg har jobbet med UX- og UI-design i Retool, med fokus på å gjøre interne verktøy 
+  mer intuitive, raske å bruke og tilpasset faktiske arbeidsprosesser. I Retool har jeg designet 
+  og konfigurert grensesnitt for datahåndtering, dashboards og admin-verktøy, der målet har vært 
+  å redusere klikk, gjøre skjemaer mer forståelige og visualisere informasjon på en måte som 
+  støtter beslutningstaking. <br><br> Arbeidet mitt har omfattet strukturering av datamodeller 
+  og queries, komponent-layout, tilpasning av tabeller, logikk for tilstandshåndtering og 
+  interaksjonsdesign. Jeg har lagt vekt på konsistent visuell stil, tydelig hierarki, 
+  feilhåndtering og god tilbakemelding til brukeren. Resultatet har vært Retool-applikasjoner 
+  som er enklere å lære, raskere å bruke og bedre tilpasset brukernes faktiske oppgaver. 
+  <br><br>Gjennom dette arbeidet har jeg fått dypere innsikt i hvordan man kan designe effektive 
+  interne verktøy som forbedrer arbeidsflyt og produktivitet i organisasjoner. 
+  <br><br>Annet forefallende UX-arbeid bestod i å kartlegge arbeidsprosesser, 
+  intervjue brukere og teste prototyper for å sikre at løsningene faktisk møtte brukernes behov. 
+  <br> <br>Utviklet i Retool, et verktøy for å bygge interne applikasjoner raskt. 
+  <br>Backend består av ulike databaser og API-er. </p> 
+       <p>
+          <a href="#">Internt verktøy</a> |
+          <a href="#">Privat repository</a>
+        </p>    
+</div>
+</div>
+
+    <!-- Callie Furmint -->
+    <div class="image-link">
+      <img src="images/callie.jpg" alt="Screenshot av Callie Furmint">
+      <div class="overlay">
+        <div class="overlay-bg"></div>
+        <button class="open-modal" data-modal="modal-callie">Vis mer</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-callie">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Callie Furmint</h3>
+        <p>Callie Furmint er en reiseblogg om en kanin som utforsker Sør-Europa sammen med eieren. Hele nettsiden er kodet i HTML, CSS og JavaScript uten ekstra biblioteker.</p>
+              <p>
+          <a href="https://hilarious-torrone-459941.netlify.app/">Live versjon</a> |
+          <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Psijii">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- gameHUB -->
+    <div class="image-link">
+      <img src="images/gamehub.jpg" alt="Screenshot av gameHUB">
+      <div class="overlay">
+        <div class="overlay-bg"></div>
+        <button class="open-modal" data-modal="modal-gamehub">Vis mer</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-gamehub">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>gameHUB</h3>
+        <p>gameHUB er en retro-inspirert nettside for spillanmeldelser og salg. Opprettet kun med HTML og CSS.</p>
+              <p>
+          <a href="https://gamehub.techlilja.io/">Live versjon</a> |
+          <a href="https://github.com/Psijii/gamehub_techlilja">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Sci MU -->
+    <div class="image-link">
+      <img src="images/scimu.jpg" alt="Screenshot av Sci MU">
+      <div class="overlay">
+        <div class="overlay-bg"></div>
+        <button class="open-modal" data-modal="modal-scimu">Vis mer</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-scimu">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Sci MU</h3>
+        <p>Sci MU er et nettsted om et vitenskapsmuseum for barn og ungdom, med fokus på vitenskap, astronomi, biologi og arkeologi. Kodet i HTML og CSS.</p>
+              <p>
+          <a href="https://funny-arithmetic-727e66.netlify.app/">Live versjon</a> |
+          <a href="https://github.com/Psijii/SP1Iversen">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ecoHUB -->
+    <div class="image-link">
+      <img src="images/ecohub.jpg" alt="Screenshot av ecoHUB">
+      <div class="overlay">
+        <div class="overlay-bg"></div>
+        <button class="open-modal" data-modal="modal-ecohub">Vis mer</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-ecohub">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>ecoHUB</h3>
+        <p>ecoHUB ble utviklet under Universitetet i Bergens kurs i Interaction Design. Målet var å lage en app og nettside som viser brukeren nærmeste økologiske matbutikker, bønder og oppskrifter. Ikke implementert ennå.</p>
+             <p>
+          <a href="https://www.figma.com/proto/nkq83omUZFFZej6WpPyMJu/INFO263---EcoHUB?page-id=0%3A1&type=design&node-id=23-93">Figma Prototype</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="about" class="about-section">
+  <div class="container about-flex">
+    <div class="about-image">
+      <img src="images/profile.jpg" alt="Siw portrett">
+    </div>
+    <div class="about-text">
+      <h2>Om Siw Årolilja</h2>
+      <h3>[siːv ɔːrʊˈliːja]</h3>
+      <h3>Frontendutvikler & UX/UI-designer</h3>
+    <p>Jeg er frontendutvikler og UX/UI-designer med lidenskap for å lage intuitive og brukervennlige løsninger. Jeg elsker å kombinere logikk, struktur og kreativitet for å gjøre komplekse systemer enkle å bruke.</p>
+    <p>Min erfaring spenner fra å utvikle nettsider og interaktive dashboards, til å designe interne verktøy som forbedrer arbeidsflyt og produktivitet. Jeg jobber alltid med brukeren i fokus, og legger vekt på tydelige brukerreiser, konsistent design og ren kode.</p>
+    <p>Jeg trives i prosjekter der teknologi og design møtes, og der jeg kan bidra til å løse reelle problemer på en elegant måte.</p>
+  </div>     
+  <!-- <ul class="skills-list">
+        <li>Frontend: HTML, CSS, JavaScript, React</li>
+        <li>UX/UI: Brukerreiser, prototyping, wireframes</li>
+        <li>Verktøy: Figma, Retool, Git, VS Code</li>
+        <li>Komplekse datastrukturer og systemdesign</li>
+        <li>Tilgjengelighet og universell utforming</li>
+        <li>Brukerundersøkelser og testing</li>
+        <li>Læring og utvikling, kjapp til å tilegne meg nye kunnskaper</li>
+      </ul> -->
+    </div>
+  </div>
+</section>
+
 
     <section id="contact">
       <h2>Kontakt</h2>
-      <p>Legg inn e‑post, LinkedIn eller skjema.</p>
+<p>
+  Send meg en e-post: <a href="#" id="email-link">siw.arolilja<!--prøver å lure bots asdlkfj2398rjfs-->@gmail.com</a>
+     <br><br> <a href="https://www.linkedin.com/in/siwarolilja/" target="_blank" rel="noopener">LinkedIn</a>
+</p>
+
+<script>
+  const user = "siw.arolilja";
+  const domain = "gmail.com";
+  const link = document.getElementById("email-link");
+  link.href = `mailto:${user}@${domain}`;
+</script>
+
+
     </section>
+
   </main>
 
   <footer>
-    <small>&copy; 2025 — bygges med kjærlighet og kaffe</small>
+    <p>&copy; Siw Årolilja</p>
   </footer>
 
   <script src="scripts/app.js"></script>
 </body>
+
 </html>
