@@ -1,0 +1,49 @@
+---
+const { title = "Portfolio", lang = "no" } = Astro.props;
+const otherLang = lang === "no" ? "en" : "no";
+const switchHref = lang === "no" ? "/en" : "/no";
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <style>
+      :root {
+        --bg: #f7f7f7;
+        --text: #111;
+        --muted: #666;
+        --accent: #3b5bdb;
+      }
+      body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); }
+      header, main { max-width: 900px; margin: auto; padding: 2rem; }
+      nav a { margin-right: 1rem; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .langswitch { float: right; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Siw – Frontend & UX</h1>
+      <nav>
+        {lang === "no" ? (
+          <>
+            <a href="/no">Hjem</a>
+            <a href="/no/projects">Prosjekter</a>
+          </>
+        ) : (
+          <>
+            <a href="/en">Home</a>
+            <a href="/en/projects">Projects</a>
+          </>
+        )}
+        <span class="langswitch"><a href={switchHref}>{otherLang.toUpperCase()}</a></span>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
