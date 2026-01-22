@@ -219,7 +219,7 @@ a {
 /* Toggle-knapp for tema */
 .toggle {
   border-radius: 50%;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--text);
   padding: .4rem .4rem;
   cursor: pointer;
   background: var(--bg);
